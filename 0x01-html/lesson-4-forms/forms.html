@@ -1,0 +1,160 @@
+<!--  HTML Forms (09/06/2024) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <!-- Example form -->
+    <h2>Example form</h2>
+
+    <!-- 
+        The <form> Element
+        The HTML <form> element is used to create an HTML form for user input
+     -->
+    <form action="" method="">
+        <!-- The <input> Element -->
+
+        <p>
+            Input type text
+            <input type="text"> 
+        <!-- Displays a single-line text input field -->
+        </p>
+
+        <p>
+            Input type radio 
+            <input type="radio" name="" id="">
+            <input type="radio" name="" id="">
+            <!-- Displays a radio button (for selecting one of many choices) -->
+        </p>
+
+        <p>
+            Input checkbox
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <!-- Displays a checkbox (for selecting zero or more of many choices) -->
+        </p>
+
+        <p>
+            Input submit
+            <input type="submit" value="Submit">
+            <!-- Displays a submit button (for submitting the form) -->
+        </p>
+
+        <p>
+            Input button 
+            <input type="button" value="Button">
+            <!-- Displays a clickable button -->
+        </p>
+    </form>
+
+    <h2>User form</h2>
+    <form action="/">
+        <!-- The <label> Element -->
+        <label for="fullName">Your Name:</label>
+        <input type="text" name="fullName" id="" placeholder="Your Name">
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" name="phone" id="" placeholder="Your Phone Number">
+
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="" placeholder="Your Age">
+
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="male" id="">
+        <input type="radio" name="male" id="">
+
+        <br><br>
+        <label for="accept">Accept rules:</label>
+        <input type="checkbox" name="" id="">
+
+        <br><br>
+        <input type="button" value="Save Data">
+    </form>
+
+    <!-- The Action Attribute -->
+    
+    <h2>The Action Attribute</h2>
+    <h6>The action attribute defines the action to be performed when the form is submitted.</h6>
+
+    <!-- example -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2>The Target Attribute</h2>
+      <p>The target attribute specifies where to display the response that is received after submitting the form.</p>
+      <p>
+        <b>
+            The target attribute can have one of the following values:
+        </b>
+      </p>
+
+      <table border="4" cellpadding="4">
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>_blank</td>
+            <td>The response is displayed in a new window or tab</td>
+        </tr>
+
+        <tr>
+            <td>_self</td>
+            <td>The response is displayed in the current window</td>
+        </tr>
+
+        <tr>
+            <td>_parent</td>
+            <td>The response is displayed in the parent frame</td>
+        </tr>
+
+        <tr>
+            <td>_top</td>
+            <td>The response is displayed in the full body of the window</td>
+        </tr>
+
+        <tr>
+            <td><i>framename</i></td>
+            <td>The response is displayed in a named iframe</td>            
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <b>
+                    The default value is _self which means that the response will open in the current window.
+                </b>
+            </td>
+        </tr>
+
+      </table>
+
+      <!-- The Method Attribute -->
+      <h2>The Method Attribute</h2>
+      <p>
+        The method attribute specifies the HTTP method to be used when submitting the form data.
+      </p>
+      <p>
+        The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+      </p>
+
+      <!-- Example -->
+      <form action="/action_page.php" method="get">
+
+      </form>
+</body>
+</html>

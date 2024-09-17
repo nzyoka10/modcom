@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Tags Example</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <!-- Start of the table -->
+    <table border="1">
+
+        <!-- Table caption, providing a title for the table -->
+        <caption>Employee Information</caption>
+
+        <!-- Column group to define styling for multiple columns -->
+        <colgroup>
+            <!-- Style applied to the first column -->
+            <!-- <col style="background-color: red;"> -->
+            <!-- Default style for the second column -->
+            <col style="background-color: yellowgreen;">
+            <!-- Default style for the third column -->
+            <!-- <col style=""> -->
+        </colgroup>
+
+        <!-- Header section of the table -->
+        <thead>
+            <tr>
+                <!-- Table headers for the columns -->
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+
+        <!-- Body section of the table containing data -->
+        <tbody>
+            <!-- First row of data -->
+            <tr>
+                <td>Jane Kimanthi</td>
+                <td>Manager</td>
+                <td>Sales</td>
+            </tr>
+
+            <!-- Second row of data -->
+            <tr>
+                <td>Ntuku Smith</td>
+                <td>Developer</td>
+                <td>IT</td>
+            </tr>
+
+            <!-- Third row of data -->
+            <tr>
+                <td>Isaac Ruto</td>
+                <td>Director</td>
+                <td>Logistics</td>
+            </tr>
+        </tbody>
+
+        <!-- Footer section of the table -->
+        <tfoot>
+            <tr>
+                <!-- Footer row spanning all columns -->
+                <td colspan="2">End of Report</td>
+                <td><b>Date:</b>&nbsp;09/05/24</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- End of the table -->
+
+    <!-- Second table (row span) -->
+    <h2>table 2</h2>
+    <table border="1">
+        <tr>
+            <td rowspan="2">Spanning 2 Rows</td>
+            <td>Cell 1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+
+    <!-- Third table (col span) -->
+    <table border="1">
+        <tr>
+            <td colspan="2">Cell spanning 2 columns</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
