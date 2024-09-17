@@ -1,0 +1,89 @@
+<!-- !HTML Forms (09/09/2024) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+    <!-- HTML forms (Monday 09/09) -->
+    <h2>Add New Fruit</h2>
+
+    <!-- form -->
+    <form action="/">
+
+        <fieldset>
+            <!-- title -->
+            <legend>Basic Information</legend>
+
+            <div class="label">
+                <label for="fruitName">Fruit Name:</label><br>
+                <input type="text" name="fruitName" id="fruitName">
+            </div>
+            
+            <div class="label">
+                <label for="description">Description:</label><br>
+                <textarea name="description" id="description" cols="20" rows="5"></textarea>
+            </div>
+
+            <div class="label">
+                <label for="category">Category:</label><br>
+                <select name="category" id="category">
+                    <option value="1">Citrus</option>
+                    <option value="2">Citrus</option>
+                </select>
+            </div>
+
+        </fieldset><br>
+
+        <!-- fieldset 2 -->
+        <fieldset>
+            <legend>Upload Image</legend>
+            <div class="label">
+                <label for="img">Choose Image:</label><br>
+                <input type="file" name="img" id="img">
+            </div>
+        </fieldset><br>
+
+        <!-- fieldset 3 -->
+        <fieldset>
+            <legend>Features:</legend>
+
+            <div class="label">
+                <label for="color">Color:</label><br>
+                <input type="text" name="color" id="color">
+            </div>
+
+            <div class="label">
+                <label for="color">Taste:</label><br>
+                <input type="text" name="taste" id="taste">
+            </div>
+
+            <div class="label">
+                <label for="add-features">Additional Features:</label><br>
+                <input type="checkbox" name="organic" id="organic">Organic<br>
+                <input type="checkbox" name="seasonal" id="seasonal">Seasonal<br>
+                <input type="checkbox" name="exotic" id="exotic">Exotic<br>
+            </div>
+        </fieldset><br>
+
+        <!-- fieldset 3 -->
+        <fieldset>
+            <legend>Type</legend>
+
+            <div class="label">
+                <label for="type">Type:</label><br>
+                <input type="radio" name="fruit" id="fruit" value="fruit">Fruit<br>
+                <input type="radio" name="nut" id="nut" value="nut">Nut
+            </div>
+        </fieldset><br>
+
+        <div class="btn">
+            <input type="submit" value="Add Fruit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

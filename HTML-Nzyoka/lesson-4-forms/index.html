@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        h3{
+            font-size: 1.4rem;
+            color: #3d1515; 
+            font-family: monospace;
+            padding: 20px 10px;
+        }
+        .links a{
+            text-decoration: none;
+            margin-top: 0;
+            padding: 0px 20px;
+            color: #000;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--
+        ! HTML Links 
+        ? There are two types of links
+            * i. Absolute links (external) - redirects to outside links, YouTube, Google, etc.
+            * ii. Relative links (internal) - reference internal links within the website
+     -->
+
+     <!-- Absolute -->
+     <h3>Absolute links:</h3>
+     <div class="links">
+        <a href="https://www.youtube.com">YouTube</a><br>
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.facebook.com">Facebook</a>
+     </div>
+
+     <!-- Relative -->
+     <h3>Relative links:</h3>
+     <div class="links">
+        <a href="./bank.html">Apply Loan</a><br>
+        <a href="../lesson-3-tables/playertable.html">Players</a><br>
+        <a href="../lesson-3-tables/furniture.html">Furniture</a><br>
+        <a href="../lesson-3-tables/motorstable.html">Motor Sport</a><br>
+     </div>
+</body>
+</html>
