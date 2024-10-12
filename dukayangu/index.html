@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        user-select: none; /* Prevent text selection */
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        // Disable right-click
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+        });
+
+        // Disable keyboard shortcuts like F12, Ctrl+U
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "F12" ||
+            (e.ctrlKey && (e.key === "U" || e.key === "I"))
+          ) {
+            e.preventDefault();
+          }
+        });
+
+        // Prevent copying text
+        document.addEventListener("copy", function (e) {
+          e.preventDefault();
+        });
+      });
+    </script>
+    <style>
+      .ours1 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      img {
+        transition: 1s;
+      }
+
+      img:hover {
+        transform: scale(1.02);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- navbar section -->
+      <!-- <h4>One</h4> -->
+      <section class="row" id="1">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand">Tumaini Collections</a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                <a class='nav-link active' href='./index.html'>Home</a>
+                <a class='nav-link' href='./beddings.html'>Beddings</a>
+                <a href="#" class="nav-link">Appliances</a>
+                <a href="#" class="nav-link">Electronics</a>
+                <a href="#" class="nav-link">Clothes</a>
+                <!-- Electronics with Hover Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    See More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"> Submenu item 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Submenu item 2 </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Submenu item 3 </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Button to Open the Modal -->
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  Login Here
+                </button>
+                <!-- End Electronics Hover Dropdown -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- <h4>Two</h4> -->
+      <!-- carousel section-->
+      <section class="row" id="2">
+        <div class="col-md-12">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/slide4.jpg"
+                  class="d-block w-100"
+                  alt="Modern Bedroom Set"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/slide2.jpg"
+                  class="d-block w-100"
+                  alt="Kitchen Appliances Sale"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/slide3.jpg"
+                  class="d-block w-100"
+                  alt="Electronics Offer"
+                />
+              </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+
+      <h4 style="text-decoration: overline">Info section</h4>
+      <!-- Info section -->
+      <section class="row text-center">
+        <div class="col-md-3">
+          <img src="images/advert.jpg" alt="Special Deals" width="80%" />
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/alionskettle.jpg" alt="Alions Kettle" width="80%" />
+          <h4 class="ours1">Alions Kettle</h4>
+          <p class="text-muted ours1">
+            Sleek and efficient, this kettle boils water in seconds.
+          </p>
+          <b class="text-warning">KES 2,300</b> <br />
+          <span class="badge bg-danger" id="discount">10% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="images/Mika2slicetoaster.png"
+            alt="Mika Toaster"
+            width="80%"
+          />
+          <h4 class="ours1">Mika Toaster</h4>
+          <p class="text-muted ours1">
+            Perfect for your breakfast needs, offering a golden toast every
+            time.
+          </p>
+          <b class="text-warning">KES 2,100</b> <br />
+          <span class="badge bg-danger">5% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/cooker.jpg" alt="Pro Cooker" width="80%" />
+          <h4 class="ours1">Pro Cooker</h4>
+          <p class="text-muted ours1">
+            Cook like a pro with this multi-functional gas and electric cooker.
+          </p>
+          <b class="text-warning">KES 3,300</b> <br />
+          <span class="badge bg-danger">20% OFF</span>
+        </div>
+      </section>
+      <br />
+      <hr />
+
+      <h4 style="text-decoration: overline">Advert section</h4>
+      <!-- Advert section -->
+      <section class="row text-center">
+        <div class="col-md-6">
+          <img src="images/advert1.jpg" alt="Summer Sale" width="100%" />
+        </div>
+
+        <div class="col-md-6">
+          <img
+            src="images/advert2.jpg"
+            alt="Discounted Products"
+            width="100%"
+          />
+        </div>
+      </section>
+      <br /><br />
+      <hr />
+
+      <h4 style="text-decoration: overline">Beddings Sections</h4>
+      <!-- Beddings Sections -->
+      <!-- <h2 style="text-decoration: overline">Beddings</h2> -->
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/bed1.jpg"
+              class="card-img-top"
+              alt="Floral Bedding"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Floral Bedding</h5>
+              <p class="card-text">
+                Add a touch of elegance with our soft, floral design beddings.
+              </p>
+              <b class="text-warning mt-auto">KES 3,300</b> <br />
+              <span class="badge bg-danger">20% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/bed2.jpg"
+              class="card-img-top"
+              alt="Duvet Pure White"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Duvet Pure White</h5>
+              <p class="card-text">
+                Experience the ultimate comfort with our pure white duvet.
+              </p>
+              <b class="text-warning mt-auto">KES 2,300</b> <br />
+              <span class="badge bg-danger">20% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/bed3.jpg"
+              class="card-img-top"
+              alt="Plain Double Sided"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Plain Double Sided</h5>
+              <p class="card-text">
+                Double-sided, reversible bedding for versatility and style.
+              </p>
+              <b class="text-warning mt-auto">KES 3,800</b> <br />
+              <span class="badge bg-danger">10% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/bed4.jpeg"
+              class="card-img-top"
+              alt="Binded Quality"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Binded Quality</h5>
+              <p class="card-text">
+                Premium bound edges for a long-lasting and elegant look.
+              </p>
+              <b class="text-warning mt-auto">KES 5,300</b> <br />
+              <span class="badge bg-danger">30% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br /><br />
+      <!-- <footer class="bg-dark text-center p-2">
+        <b class="text-white"
+          >Developed by X. &copy; 2024. All Rights Reserved</b
+        >.
+      </footer> -->
+
+      <h4 style="text-decoration: overline">Decor Sections</h4>
+      <!-- Decor Sections -->
+      <!-- <h2 style="text-decoration: overline">Home Decor</h2> -->
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3">
+          <img src="images/decor1.jpg" alt="Elegant Vase" width="80%" />
+          <h4 class="ours1">Elegant Vase</h4>
+          <p class="text-muted ours1">
+            Handcrafted vase to complement any room decor.
+          </p>
+          <b class="text-warning">KES 3,300</b> <br />
+          <span class="badge bg-danger">10% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/decor2.jpg" alt="Modern Wall Art" width="80%" />
+          <h4 class="ours1">Modern Wall Art</h4>
+          <p class="text-muted ours1">
+            Bold and modern designs to uplift any space.
+          </p>
+          <b class="text-warning">KES 2,500</b> <br />
+          <span class="badge bg-danger">15% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/decor3.jpg" alt="Designer Clock" width="80%" />
+          <h4 class="ours1">Designer Clock</h4>
+          <p class="text-muted ours1">
+            Timeless elegance with this designer wall clock.
+          </p>
+          <b class="text-warning">KES 2,100</b> <br />
+          <span class="badge bg-danger">5% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/decor4.jpg" alt="Luxury Lamp" width="80%" />
+          <h4 class="ours1">Luxury Lamp</h4>
+          <p class="text-muted ours1">
+            Bring warmth and style with this premium lamp.
+          </p>
+          <b class="text-warning">KES 4,300</b> <br />
+          <span class="badge bg-danger">20% OFF</span>
+        </div>
+      </section>
+
+      <h4 style="text-decoration: overline">Appliances Section</h4>
+      <!-- Appliances Section -->
+      <!-- <h2 style="text-decoration: overline">Appliances</h2> -->
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/appl.jpg"
+              class="card-img-top"
+              alt="Double Door Fridge"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Double Door Fridge</h5>
+              <p class="card-text">
+                Spacious double-door refrigerator with energy-saving technology.
+              </p>
+              <b class="text-warning mt-auto">KES 40,000</b> <br />
+              <span class="badge bg-danger">10% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/appl2.jpg"
+              class="card-img-top"
+              alt="Front Load Washing Machine"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Front Load Washing Machine</h5>
+              <p class="card-text">
+                High-efficiency front-load washing machine with multiple modes.
+              </p>
+              <b class="text-warning mt-auto">KES 35,000</b> <br />
+              <span class="badge bg-danger">15% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/appl3.jpg"
+              class="card-img-top"
+              alt="Microwave Oven"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Microwave Oven</h5>
+              <p class="card-text">
+                Sleek microwave oven with advanced features for fast cooking.
+              </p>
+              <b class="text-warning mt-auto">KES 15,000</b> <br />
+              <span class="badge bg-danger">20% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/appl4.jpg"
+              class="card-img-top"
+              alt="High-Power Blender"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">High-Power Blender</h5>
+              <p class="card-text">
+                Blend smoothies and more with this powerful, versatile blender.
+              </p>
+              <b class="text-warning mt-auto">KES 8,000</b> <br />
+              <span class="badge bg-danger">10% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+
+      <h4 style="text-decoration: overline">Electronics Section</h4>
+      <!-- Electronics Section -->
+      <!-- <h2 style="text-decoration: overline">Electronics</h2> -->
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/screen1.jpg"
+              class="card-img-top"
+              alt="4K Smart TV"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">4K Smart TV</h5>
+              <p class="card-text">
+                Ultra HD 4K smart TV for a premium viewing experience.
+              </p>
+              <b class="text-warning mt-auto">KES 50,000</b> <br />
+              <span class="badge bg-danger">15% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/screen2.jpg"
+              class="card-img-top"
+              alt="Gaming Laptop"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gaming Laptop</h5>
+              <p class="card-text">
+                High-performance laptop designed for gaming and heavy use.
+              </p>
+              <b class="text-warning mt-auto">KES 120,000</b> <br />
+              <span class="badge bg-danger">10% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/screen3.jpg"
+              class="card-img-top"
+              alt="Smartphone Pro"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Smartphone Pro</h5>
+              <p class="card-text">
+                Latest smartphone with cutting-edge features and design.
+              </p>
+              <b class="text-warning mt-auto">KES 75,000</b> <br />
+              <span class="badge bg-danger">20% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/screen4.jpg"
+              class="card-img-top"
+              alt="Bluetooth Speakers"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bluetooth Speakers</h5>
+              <p class="card-text">
+                Portable Bluetooth speakers for crisp and clear sound anywhere.
+              </p>
+              <b class="text-warning mt-auto">KES 5,000</b> <br />
+              <span class="badge bg-danger">15% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+
+      <!-- <h4>Toys Section</h4> -->
+      <!-- Toys Section -->
+      <h2 style="text-decoration: overline">Bath Section</h2>
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3">
+          <img src="images/bath1.jpg" alt="Toy Car" width="70%" height="200" />
+          <h4 class="ours1">Toy Car</h4>
+          <p class="text-muted ours1">
+            Fun and durable toy car for kids aged 3 and above.
+          </p>
+          <b class="text-warning">KES 1,200</b> <br />
+          <span class="badge bg-danger">10% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="images/bath2.jpg"
+            alt="Fashion Doll"
+            width="70%"
+            height="200"
+          />
+          <h4 class="ours1">Fashion Doll</h4>
+          <p class="text-muted ours1">
+            Trendy fashion doll for hours of imaginative play.
+          </p>
+          <b class="text-warning">KES 2,000</b> <br />
+          <span class="badge bg-danger">15% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="images/bath3.jpg"
+            alt="Lego Building Set"
+            width="70%"
+            height="200"
+          />
+          <h4 class="ours1">Lego Building Set</h4>
+          <p class="text-muted ours1">
+            Create endless structures with this classic Lego set.
+          </p>
+          <b class="text-warning">KES 5,500</b> <br />
+          <span class="badge bg-danger">20% OFF</span>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="images/bath4.jpg"
+            alt="Jigsaw Puzzle"
+            width="70%"
+            height="200"
+          />
+          <h4 class="ours1">Jigsaw Puzzle</h4>
+          <p class="text-muted ours1">
+            Enjoy a fun challenge with this 1000-piece jigsaw puzzle.
+          </p>
+          <b class="text-warning">KES 1,800</b> <br />
+          <span class="badge bg-danger">5% OFF</span>
+        </div>
+      </section>
+      <br /><br />
+
+      <!-- <h4>Kitchenware Section</h4> -->
+      <!-- Kitchenware Section -->
+      <h2 style="text-decoration: overline">Phones</h2>
+      <br />
+      <section class="row text-center">
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/phone1.jpg"
+              class="card-img-top"
+              alt="Phone 1"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">iPhone 13</h5>
+              <p class="card-text">
+                Experience the latest A15 Bionic chip with iPhone 13, featuring
+                5G speed, and a dual-camera system.
+              </p>
+              <b class="text-warning mt-auto">KES 120,000</b> <br />
+              <span class="badge bg-danger">10% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/phone2.jpg"
+              class="card-img-top"
+              alt="Phone 2"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Samsung Galaxy S21</h5>
+              <p class="card-text">
+                Capture stunning photos with the 64MP camera and enjoy
+                ultra-smooth performance with Exynos 2100.
+              </p>
+              <b class="text-warning mt-auto">KES 105,000</b> <br />
+              <span class="badge bg-danger">15% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/phone3.jpg"
+              class="card-img-top"
+              alt="Phone 3"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Google Pixel 6</h5>
+              <p class="card-text">
+                Powered by Google’s own Tensor chip, Pixel 6 provides
+                exceptional AI features and camera performance.
+              </p>
+              <b class="text-warning mt-auto">KES 85,000</b> <br />
+              <span class="badge bg-danger">20% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div class="card h-100 d-flex flex-column" style="width: 18rem">
+            <img
+              src="images/phone4.jpg"
+              class="card-img-top"
+              alt="Phone 4"
+              height="200"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">OnePlus 9 Pro</h5>
+              <p class="card-text">
+                Enjoy ultra-fast performance with Snapdragon 888 and a 120Hz
+                Fluid AMOLED display on the OnePlus 9 Pro.
+              </p>
+              <b class="text-warning mt-auto">KES 95,000</b> <br />
+              <span class="badge bg-danger">5% OFF</span><br />
+              <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark text-center p-2">
+        <b class="text-white"
+          >Developed by X. &copy; 2024. All Rights Reserved</b
+        >.
+      </footer>
+    </div>
+  </body>
+</html>

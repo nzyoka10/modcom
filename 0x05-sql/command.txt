@@ -1,0 +1,8 @@
+
+# Command to start Xampp 
+
+```
+    sudo /opt/lampp/lampp start
+```
+
+Then enter password
