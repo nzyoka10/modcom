@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamia- Upload</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body>
+    <!-- navbar -->
+    {% include 'navbar.html' %}
+
+    <section class="row mt-4">
+        <div class="col-md-6 ms-5">
+            <div class="card shadow p-2">
+                <!-- error message -->
+                <b class="text-success p-2">{{ message }}</b>
+                <b class="text-danger p-2">{{ error }}</b>
+
+                <!-- card title -->
+                <h3 class="text-dark p-3">Upload Item</h3>
+
+                <!-- upload form -->
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="product_name" class="form-label">Product Name</label>
+                            <input
+                                type="text"
+                                name="product_name"
+                                id="product_name"
+                                class="form-control"
+                                placeholder=""
+                                required
+                            />                        
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="product_descrption">Product Description</label>
+                            <textarea name="product_description" class="form-control" id="product_descrption" cols="10" rows="2"></textarea>
+                        </div> 
+                        
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="product_cost">Product Cost</label>
+                            <input type="number" name="product_cost" class="form-control" required>
+                        </div>
+    
+                        <div class="col-md-6 mb-3">
+                            <label for="category">Product Category</label>
+                            <select name="product_category" id="product_category" class="form-control">
+                                <option selected>Select choice</option>
+                                <option value="phones">Phones</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="footwear">Footwear</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="product_image">Product Image</label>
+                        <input type="file" name="product_image_name" class="form-control" required>
+                    </div>
+
+                    <input type="submit" class="btn btn-warning" value="Add record">
+
+                </form>
+
+                
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

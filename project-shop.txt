@@ -1,0 +1,13 @@
+
+Simple online shop 
+
+- Homepage
+    * Navbar
+    * Carousel 
+    - 4 Sections of displayed items
+    * Footer
+-> 4 different pages for each 
+-> upload page for products/ items
+-> User Authentication
+    * Login 
+    * Registration
