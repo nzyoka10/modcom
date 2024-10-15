@@ -2,6 +2,8 @@
 
 **Data Science** is the process of using data to gain insights and solve real-world problems. It combines techniques from statistics, programming, and domain expertise to analyze data and make informed decisions.
 
+<!-- Add screen image here -->
+
 ## Key Concepts
 
 1. **Data Collection**: Gathering raw data from various sources like databases, websites, sensors, or social media platforms.
