@@ -6,7 +6,6 @@ fun main()
     // determine the mpesa charges
 
     val amount: Int = 6000
-    val charges: Int
     printCharges(amount)
 }
 
@@ -28,7 +27,9 @@ fun printCharges(amount: Int)
     else if(amount >= 2500){
         charges = 34
     }
-    else{
+    else
+    {
         charges = 0
     }
+    print("Amount charge is, $charge")
 }
