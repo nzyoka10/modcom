@@ -8,11 +8,18 @@ fun main()
 
     // Addition
     val sum: Int = num1 + num2 + num3
-
-    // subtraction
-    // multiply
-    // division
-
     // concatination, combine the varibale and string
     println("Sum: $sum")
+
+    // subtraction
+    val difference: Int = num3 - num2
+    println("Difference: $difference")
+
+    // multiply
+    val multiply: Int = num1 * num2 * num3
+    println("Multiply: $multiply")
+
+    // division
+    val division: Int = num3 / num2
+    println("Division: $division")
 }
