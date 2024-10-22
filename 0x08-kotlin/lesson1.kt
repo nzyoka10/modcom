@@ -18,4 +18,8 @@ fun main()
     val name: String = "Nzyoka"
     val letter: Char = 'K'
     val isRainig: Boolean = False
+
+    // outputs
+    println(weight, weight2)
+    println(mynumber, mynumber2)
 }
