@@ -2,25 +2,29 @@
 
 fun main() {
     // BMI = weight / height * height
-    val weight: Double = 70.0
+    val weight: Double = 73.4
     val height: Double = 1.75
     val bmi: Double = weight / (height * height)
 
-    // Print BMI rounded to 2 decimal places
-    println("%.2f".format(bmi))
+    // Debug: Print BMI rounded to 2 decimal places
+    println(String.format("%.2f", bmi))
 
     // BMI classification
     if (bmi < 18.5) {
-        println("%.2f : Underweight".format(bmi))
+        println(String.format("%.2f: Underweight", bmi))
 
     } else if (bmi >= 18.5 && bmi <= 24.9) {
-        println("%.2f : Normal weight".format(bmi))
+        println(String.format("%.2f: Normal weight", bmi))
 
     } else if (bmi >= 25.0 && bmi < 30.0) {
-        println("%.2f : Overweight".format(bmi))
-        
+        println(String.format("%.2f: Overweight", bmi))
+
+    } else if (bmi >= 30) {
+        println(String.format("%.2f: Obesity", bmi))
+
     } else {
-        println("%.2f : Obese".format(bmi))
+        println(String.format("%.2f: Invalid BMI", bmi))
     }
 }
+
 
