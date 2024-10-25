@@ -1,5 +1,5 @@
 // class fish
-class Fish(){
+class Fish{
 
     // fish properties
     val name: String = "Tilapia"
